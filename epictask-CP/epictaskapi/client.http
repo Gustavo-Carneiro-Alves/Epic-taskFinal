@@ -1,0 +1,53 @@
+###
+
+# Listar Todos Usuários
+GET http://localhost:8080/api/user
+
+###
+
+# Detalhes do usuário
+GET http://localhost:8080/api/user/1
+
+###
+
+# Cadastrar
+POST http://localhost:8080/api/user
+Content-Type: application/json
+
+{
+    "name": "Regina",
+	"email": "regina@gmail.com",
+	"password": "888555"
+}
+
+###
+
+# Detalhes do usuário
+GET http://localhost:8080/api/user/4
+
+###
+
+# Apagar
+DELETE http://localhost:8080/api/user/3
+
+###
+
+# Detalhes do usuário
+GET http://localhost:8080/api/user/3
+
+###
+
+PUT http://localhost:8080/api/user/1
+Content-Type: application/json
+
+{
+    "name": "Cleber",
+	"email": "cleber@gmail.com"
+}
+
+###
+
+# Detalhes do usuário
+GET http://localhost:8080/api/user/1
+
+###
