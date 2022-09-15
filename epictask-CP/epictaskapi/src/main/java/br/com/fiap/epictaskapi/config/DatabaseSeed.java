@@ -27,9 +27,9 @@ public class DatabaseSeed implements CommandLineRunner {
 
         userRepository.saveAll(List.of(
             new User()
-                .name("João")
-                .email("joao@fiap.com.br")
-                .password(passwordEncoder.encode("123")),
+                .name("admin")
+                .email("admin@fiap.com.br")
+                .password(passwordEncoder.encode("administrador")),
             new User()
                 .name("Carlos")
                 .email("carlos@fiap.com.br")

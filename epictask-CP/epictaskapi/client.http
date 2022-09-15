@@ -10,6 +10,12 @@ GET http://localhost:8080/api/user/1
 
 ###
 
+# Apagar
+DELETE http://localhost:8080/api/user/2
+Authorization: Basic admin@fiap.com.br administrador
+
+###
+
 # Cadastrar
 POST http://localhost:8080/api/user
 Content-Type: application/json
@@ -22,32 +28,13 @@ Content-Type: application/json
 
 ###
 
-# Detalhes do usuário
-GET http://localhost:8080/api/user/4
-
-###
-
-# Apagar
-DELETE http://localhost:8080/api/user/3
-
-###
-
-# Detalhes do usuário
-GET http://localhost:8080/api/user/3
-
-###
-
-PUT http://localhost:8080/api/user/1
+PUT http://localhost:8080/api/user/3
 Content-Type: application/json
+Authorization: Basic admin@fiap.com.br administrador
 
 {
     "name": "Cleber",
 	"email": "cleber@gmail.com"
 }
-
-###
-
-# Detalhes do usuário
-GET http://localhost:8080/api/user/1
 
 ###
